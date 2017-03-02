@@ -51,7 +51,7 @@
  							<p><b>Prix m² : </b><%= Math.round(data.lbcData.price/data.lbcData.surface,2) %> m²</p>
  						</div>
  					</div>
- 					<div id="MAPrix" class="bien mdl-card mdl-cell--5-col mdl-shadow--2dp">
+ 					<div id="MAPrix" class="bien mdl-card mdl-cell--5-col mdl-shadow--2dp field">
  						<div class="mdl-card__title">
  							<h2 class="mdl-card__title-text deal-card-title">Meilleurs Agents </h2>
  						</div>					
@@ -60,17 +60,17 @@
  							<p><b>MAISON : </b><%= data.maData.priceHouse %> €/m²</p>
  						</div>
  					</div>	
- 					<div id="Deal" class="mdl-card  mdl-shadow--2dp deal mdl-cell--5-col">
+ 					<div id="Deal" class="mdl-card  mdl-shadow--2dp deal mdl-cell--5-col field">
  						<div class="mdl-card__title">
  							<h2 class="mdl-card__title-text deal-card-title">Deal ?</h2>
  						</div>
  						<div class="mdl-card__supporting-text deal-text">		
  							<% if (data.deal.good) {%>
  							<b> GOOD DEAL ! </b>
- 							<p> L'offre proposé est attractive car le prix au mètre carré sur LeBonCoin est moins chere que celle proposé sur MeilleursAgents </p>
+ 							<p> Offre proposé est attractive car le prix au mètre carré sur LeBonCoin est moins chere que celle proposé sur MeilleursAgents </p>
  							<%} else {%>
  							<b> BAD DEAL ! </b>
- 							<p>  L'offre proposé n'est pas attractive car le prix au mètre carré sur LeBonCoin est plus chere que celle proposé sur MeilleursAgents </p>
+ 							<p> Offre proposé n'est pas attractive car le prix au mètre carré sur LeBonCoin est plus chere que celle proposé sur MeilleursAgents </p>
  						</div>
  					</div>
  				</div>
